@@ -1,0 +1,9 @@
+{
+    "name": "LCTeleporterAnomaly",
+    "version_number": "0.1.0",
+    "website_url": "https://github.com/tonydimalta/LCTeleporterAnomaly/",
+    "description": "The company has cut costs by subcontracting the production of teleporters, but it seems that they are slightly defective. Can you survive or even profit from this anomaly?",
+    "dependencies": [
+        "BepInEx-BepInExPack-5.4.2100"
+    ]
+}
