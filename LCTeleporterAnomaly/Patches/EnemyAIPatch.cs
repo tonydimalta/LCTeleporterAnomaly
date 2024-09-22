@@ -132,8 +132,8 @@ namespace LCTeleporterAnomaly.Patches
             _enemyAI.isOutside = outside;
             _enemyAI.allAINodes = outside ? RoundManager.Instance.outsideAINodes : RoundManager.Instance.insideAINodes;
 
-            int newOutsideEnemyPower = RoundManager.Instance.currentOutsideEnemyPower + _enemyAI.enemyType.PowerLevel * (outside ? 1 : -1);
-            int newInsideEnemyPower = RoundManager.Instance.currentEnemyPower + _enemyAI.enemyType.PowerLevel * (outside ? -1 : 1);
+            float newOutsideEnemyPower = RoundManager.Instance.currentOutsideEnemyPower + _enemyAI.enemyType.PowerLevel * (outside ? 1 : -1);
+            float newInsideEnemyPower = RoundManager.Instance.currentEnemyPower + _enemyAI.enemyType.PowerLevel * (outside ? -1 : 1);
             RoundManager.Instance.currentOutsideEnemyPower = Mathf.Max(newOutsideEnemyPower, 0);
             RoundManager.Instance.currentEnemyPower = Mathf.Max(newInsideEnemyPower, 0);
 
